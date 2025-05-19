@@ -13,7 +13,7 @@ label_encoder = joblib.load("label_encoder.pkl")
 # Setup UI Streamlit
 
 st.set_page_config(page_title="Prediksi Dropout Mahasiswa", layout="wide")
-st.title("🎓 Prediksi Dropout Mahasiswa - Jaya Jaya Institut")
+st.title(" Prediksi Dropout Mahasiswa - Jaya Jaya Institut")
 
 st.write("Silakan isi data mahasiswa berikut untuk memprediksi status kelulusan:")
 
