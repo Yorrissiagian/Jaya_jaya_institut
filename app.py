@@ -13,7 +13,7 @@ label_encoder = joblib.load("label_encoder.pkl")
 # Setup UI Streamlit
 
 st.set_page_config(page_title="Prediksi Dropout Mahasiswa", layout="wide")
-st.title(" Prediksi Dropout Mahasiswa - Jaya Jaya Institut")
+st.title("Prediksi Dropout Mahasiswa - Jaya Jaya Institut")
 
 st.write("Silakan isi data mahasiswa berikut untuk memprediksi status kelulusan:")
 
@@ -70,4 +70,4 @@ if st.button("Prediksi Status"):
     prediction = pipeline.predict(input_df)
     pred_label = label_encoder.inverse_transform(prediction)[0]
 
-    st.success(f"🎯 Prediksi Status Mahasiswa: **{pred_label.upper()}**")
+    st.success(f"Prediksi Status Mahasiswa: **{pred_label.upper()}**")
