@@ -6,7 +6,7 @@ import pandas as pd
 
 # Load model pipeline dan label encoder
 
-pipeline = joblib.load("final_model_pipeline.pkl")
+pipeline = joblib.load("model.pkl")
 label_encoder = joblib.load("label_encoder.pkl")
 
 
